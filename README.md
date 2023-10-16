@@ -11,4 +11,4 @@ live-server
 
 然后在文档接口中输入 swagger 在线链接，即可输出结果
 
-![](https://cdn.jsdelivr.net/gh/SHERlocked93/pic@master/upic/ApyXoJ-20231016-StQLTM.png)
+![](https://cdn.jsdelivr.net/gh/SHERlocked93/pic@master/upic/69BE8Y-20231016-MGHaYa.png)
