@@ -239,18 +239,15 @@ const app = Vue.createApp({
                 key = key.replace(/\{\S+\}/g, '')
                 url = `"${this.basePath}${key}"` + '+' + urlParams
             }
+            console.log(" -- ", paths.map(word => word.replace(/^\S/, s => s.toUpperCase())).join())
             const funcStr = `
             ${annotation}
-            export function ${method}${methodPart.replace(/^\S/, s =>
-                s.toUpperCase()
-            )}(${isUrlParams ? urlParams + ',' : ''} ${paramsType}, other = {}) {
-                return request({
+            export const ${method}${paths.map(word => word.replace(/^\S/, s => s.toUpperCase())).join('')} = (${isUrlParams ? urlParams + ',' : ''} ${paramsType}, other = {}) => request({
                 url:'${url}',
                 method: '${method}',
                 ${paramsType},
                 ...other
-              })
-            }`
+              })`
             return funcStr
         },
 
