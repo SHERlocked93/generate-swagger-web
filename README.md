@@ -9,4 +9,6 @@ fork 自[Journey98/generate-swagger-web](https://github.com/Journey98/generate-s
 live-server
 ```
 
-然后在文档接口中输入 swagger 在线链接
+然后在文档接口中输入 swagger 在线链接，即可输出结果
+
+![](https://cdn.jsdelivr.net/gh/SHERlocked93/pic@master/upic/ApyXoJ-20231016-StQLTM.png)
